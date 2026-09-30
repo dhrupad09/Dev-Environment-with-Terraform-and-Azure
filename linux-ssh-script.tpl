@@ -1,7 +1,8 @@
-cat << EOF >> ~/.ssh/config
+mkdir -p ~/.ssh
+cat << EOT >> ~/.ssh/config
 
 Host ${hostname}
   HostName ${hostname}
   User ${user}
   IdentityFile ${identityfile}
-EOF
+EOT

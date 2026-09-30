@@ -1,7 +1,8 @@
-echo $PATH /users/dhrupadsolanki/.ssh/config -value @'
+mkdir -p ~/.ssh
+cat << EOT >> ~/.ssh/config
 
 Host ${hostname}
   HostName ${hostname}
   User ${user}
   IdentityFile ${identityfile}
-'@
+EOT

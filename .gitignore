@@ -1,0 +1,20 @@
+# Local Terraform working directory (providers, modules)
+.terraform/
+
+# State can contain secrets; keep it in a remote backend, never in git
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Variable files often hold personal values (your IP, key paths)
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
